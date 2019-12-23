@@ -7,10 +7,10 @@ Write-up for the Active Directory Lab I created for [Akerva](https://www.akerva.
 | ------------- |:-------------|
 | [About](#About) | About the challenge |
 | [Recon](#Recon) | Information Gathering |
-| [Tomcat HostManager](#Tomcat) | Getting RCE via Tomcat's host manager |
-| [ProcDump lsass](#Procdump) | Retrieving credentials by remotely ProcDumping lsass process |
+| [Tomcat](#Tomcat) | Getting RCE via Tomcat's host manager |
+| [Procdump](#Procdump) | Retrieving credentials by remotely ProcDumping lsass process |
 | [Bloodhound](#Bloodhound) | Cartographying the domaine by using Bloodhound |
-| [Browsing Shares](#Shares) | Retrieving juicy information by browsing shares |
+| [Shares](#Shares) | Retrieving juicy information by browsing shares |
 | [RBCD](#RBCD) | Getting DA by exploiting RBCD |
 | [Looting](#Looting) | Looting juicy information for part 3 |
 
@@ -122,7 +122,6 @@ The flag 5 is on the adminServer's Desktop.
 ## Procdump
 We then dump the lsass process thank's to Sysinternal's ProcDump tool.
 
-![dump]()
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/22-1.png"></p>
 
 We bring back our dump.
