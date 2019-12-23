@@ -9,8 +9,7 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | -------------- |:-------------|
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
-| [Tomcat](#Tomcat)    | Getting RCE via Tomcat's host manager |
-| [Procdump](#Procdump)    | Retrieving credentials by remotely ProcDumping lsass process |
+| [Foothold](#Foothold)    | Getting RCE via Tomcat's host manager and ProcDumping lsass process |
 | [Bloodhound](#Bloodhound)    | Cartographying the domain with Bloodhound |
 | [BrowsingShares](#Shares)    | Retrieving juicy information by browsing shares |
 | [RBCD](#RBCD)    | Getting Domain Admin by exploiting RBCD |
@@ -54,7 +53,7 @@ We confirm these three machines are part of a domain FACTORY.LAN.
 | SRV01-INTRANET | 172.16.42.11 | Windows Server 2019 |
 | PC01-DEV | 172.16.42.101	| Windows 10 |
 
-## Tomcat
+## Foothold
 By reaching SRV01-INTRANET's port 8080 with a web browser, we face what looks like an internal wiki of the Wonka organization.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/6-1.png"></p>
@@ -122,7 +121,6 @@ The flag 5 is on the adminServer's Desktop.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/21-1.png"></p>
 
-## Procdump
 We then dump the lsass process thank's to Sysinternal's ProcDump tool.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/22-1.png"></p>
