@@ -5,8 +5,8 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 
 ## Index
 
-| Title        | Description   |
-| ------------- |:-------------|
+| Title         | Description   |
+| -------------- |:-------------|
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
 | [Tomcat](#Tomcat)    | Getting RCE via Tomcat's host manager |
