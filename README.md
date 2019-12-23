@@ -10,6 +10,7 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | [About](#About)    | About the challenge |
 | [Reconnaissance](#Reconnaissance)    | Reconnaissance |
 | [Initial Foothold](#InitialFoothold)    | Tomcat's host-manager |
+| [Procdump lsass](#Procdump)    | Procdump lsass process to retrieve credentials |
 | [Cartography with Bloodhound](#Bloodhound)    | AD Cartography with Bloodhound |
 | [Browsing Shares](#Shares)    | Browsing shares |
 | [RBCD Exploitation](#RBCD)    | RBCD Exploitation |
@@ -21,7 +22,7 @@ WonkaChall 2 created by Akerva for leHACK19 (Paris) is divided into three parts:
 * [part 2 (Active Directory)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-2-windows/) <= This write-up deals with the Active Directory part I have created.
 * [part 3 (Linux)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-3-linux/)
 
-## Recon
+## Reconnaissance
 In the previous part 1, we retrieved a VPN configuration file on a AWS bucket. We can now connect to the wonka internal network with the VPN config file (wonka_internal.ovpn).
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/1-1.png"></p>
@@ -53,7 +54,7 @@ We confirm these three machines are part of a domain FACTORY.LAN.
 | SRV01-INTRANET | 172.16.42.11 | Windows Server 2019 |
 | PC01-DEV | 172.16.42.101	| Windows 10 |
 
-## Foothold
+## Initial Foothold
 By reaching SRV01-INTRANET's port 8080 with a web browser, we face what looks like an internal wiki of the Wonka organization.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/6-1.png"></p>
@@ -123,6 +124,7 @@ The flag 5 is on the adminServer's Desktop.
 
 We then dump the lsass process thank's to Sysinternal's ProcDump tool.
 
+## Procdump lsass
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/22-1.png"></p>
 
 We bring back our dump.
@@ -136,7 +138,7 @@ And we parse it locally to retrieve credentials..
 
 Flag 6 is the SHA256 of the adminServer's password.
 
-## Bloodhound
+## Cartography with Bloodhound
 Now we have a domain account, we can use Bloodhound to cartography the domain. We carefully take the latest version of Bloodhound and Sharphound. No need to add a Windows machine to the domain to launch Sharphound.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/26-1.png"></p>
@@ -162,7 +164,7 @@ For the second point, our Bloodhound clearly states that SvcJoinComputerToDom ha
 
 So, we have to find this SvcJoinComputerToDom. We can imagine this service account was created by the domain administrator in order to delegate the right to join machines to the domain to the adminServer and adminWorkstation, without giving them the domain administrator privilege.
 
-## Shares
+## Browsing Shares
 We check to what our adminServer account has access to.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/28-1.png"></p>
@@ -175,7 +177,7 @@ And aldo flag 7.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/30-1.png"></p>
 
-## RBCD
+## RBCD Exploitation
 Everything is in place for our RBCD exploitation. We will need four tools (PowerView, Powermad, Rubeus and Mimikatz).
 * https://github.com/PowerShellMafia/PowerSploit/blob/dev/Recon/PowerView.ps1
 * https://github.com/Kevin-Robertson/Powermad/blob/master/Powermad.ps1
