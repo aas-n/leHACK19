@@ -1,5 +1,5 @@
 # Write-up [```LEHACK19```](https://lehack.org/)  
-Active Directory Lab I made for [Akerva](https://www.akerva.com) exhibition stand @ leHACK19 (Paris)
+Write-up for the Active Directory Lab I created for [Akerva](https://www.akerva.com) exhibition stand @ leHACK19 (Paris)
 
 ## Index
 
@@ -16,10 +16,9 @@ Active Directory Lab I made for [Akerva](https://www.akerva.com) exhibition stan
 
 ## About
 The WonkaChall 2 was created by Akerva for leHACK19 (Paris).
-* part 1 (AWS): https://akerva.com/blog/wonkachall-akerva-lehack-2019-write-up-part-1-web/
-* part 2 (Active Directory): https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-2-windows/
-* part 3 (Linux): https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-3-linux/
-This write-up deals with the Active Directory part I have created.
+* [part 1 (AWS)](https://akerva.com/blog/wonkachall-akerva-lehack-2019-write-up-part-1-web/)
+* [part 2 (Active Directory)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-2-windows/) <= This write-up deals with the Active Directory part I have created.
+* [part 3 (Linux)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-3-linux/)
 
 ## Recon
 In the previous part 1, we retrieved a VPN configuration file on a AWS bucket. We can now connect to the wonka internal network with the VPN config file (wonka_internal.ovpn).
