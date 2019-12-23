@@ -5,7 +5,7 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 
 ## Index
 
-| Title &nbsp; | Description |
+| Title &nbsp; &nbsp; | Description |
 | -------------- |:-------------- |
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
