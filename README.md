@@ -1,6 +1,8 @@
 # Write-up [```LEHACK19```](https://lehack.org/)  
 Write-up for the Active Directory Lab I have created for [Akerva](https://www.akerva.com) exhibition stand @ leHACK19 (Paris)
 
+<p align="center"><img src="https://i.ibb.co/tD63L8k/D-8-MFc-FXUAAR6-EI.jpg"></p>
+
 ## Index
 
 | Title        | Description   |
