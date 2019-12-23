@@ -5,14 +5,14 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 
 ## Index
 
-| Title &nbsp; &nbsp;           | Description    |
+| Title          | Description    |
 | -------------- |:-------------- |
 | [About](#About)    | About the challenge |
-| [Recon](#Recon)    | Reconnaissance |
-| [Foothold](#Foothold)    | Initial foothold by exploit default credentials on Tomcat's host-manager |
-| [Bloodhound](#Bloodhound)    | AD Cartography with Bloodhound |
-| [Shares](#Shares)    | Browsing shares |
-| [RBCD](#RBCD)    | RBCD Exploitation |
+| [Reconnaissance](#Reconnaissance)    | Reconnaissance |
+| [Initial Foothold](#InitialFoothold)    | Initial foothold by exploit default credentials on Tomcat's host-manager |
+| [Cartography with Bloodhound](#Bloodhound)    | AD Cartography with Bloodhound |
+| [Browsing Shares](#Shares)    | Browsing shares |
+| [RBCD Exploitation](#RBCD)    | RBCD Exploitation |
 | [Looting](#Looting)    | Looting juicy information|
 
 ## About
