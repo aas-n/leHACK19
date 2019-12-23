@@ -9,11 +9,11 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | -------------- |:-------------|
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
-| [Foothold](#Foothold)    | Initial foothold and Post-Exploitation |
-| [Bloodhound](#Bloodhound)    | Cartographying with Bloodhound |
+| [Foothold](#Foothold)    | Initial foothold |
+| [Bloodhound](#Bloodhound)    | Cartographying AD |
 | [Shares](#Shares)    | Browsing shares |
-| [RBCD](#RBCD)    | Getting DA by exploiting RBCD |
-| [Looting](#Looting)    | Looting juicy information for part 3 |
+| [RBCD](#RBCD)    | RBCD Exploitation |
+| [Looting](#Looting)    | Looting juicy information|
 
 ## About
 WonkaChall 2 created by Akerva for leHACK19 (Paris) is divided into three parts:
