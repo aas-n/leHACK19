@@ -5,8 +5,8 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 
 ## Index
 
-| Title &nbsp; | Description |
-| -------------- |:-------------|
+| &nbsp; Title &nbsp; | Description |
+| -------------- |:-------------- |
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
 | [Foothold](#Foothold)    | Initial foothold by exploiting Tomcat's host-manager |
