@@ -1,5 +1,5 @@
 # Write-up [```LEHACK19```](https://lehack.org/)  
-Write-up for the Active Directory Lab I created for [Akerva](https://www.akerva.com) exhibition stand @ leHACK19 (Paris)
+Write-up for the Active Directory Lab I have created for [Akerva](https://www.akerva.com) exhibition stand @ leHACK19 (Paris)
 
 ## Index
 
@@ -15,7 +15,7 @@ Write-up for the Active Directory Lab I created for [Akerva](https://www.akerva.
 | [Looting](#Looting) | Looting juicy information for part 3 |
 
 ## About
-The WonkaChall 2 was created by Akerva for leHACK19 (Paris).
+WonkaChall 2 created by Akerva for leHACK19 (Paris) is divided into three parts:
 * [part 1 (AWS)](https://akerva.com/blog/wonkachall-akerva-lehack-2019-write-up-part-1-web/)
 * [part 2 (Active Directory)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-2-windows/) <= This write-up deals with the Active Directory part I have created.
 * [part 3 (Linux)](https://akerva.com/blog/wonkachall-2-lehack-2019-write-up-part-3-linux/)
