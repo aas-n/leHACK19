@@ -8,11 +8,11 @@ Write-up for the Active Directory Lab I created for [Akerva](https://www.akerva.
 | [About](#About) | About the challenge |
 | [Recon](#Recon) | Information Gathering |
 | [Tomcat HostManager](#Tomcat) | Getting RCE via Tomcat's host manager |
-| [ProcDump lsass](#procdump) | Retrieving credentials by remotely ProcDumping lsass process |
-| [Bloodhound](#bloodhound) | Cartographying the domaine by using Bloodhound |
-| [Browsing Shares](#shares) | Retrieving juicy information by browsing shares |
-| [RBCD](#rbcd) | Getting DA by exploiting RBCD |
-| [Looting](#looting) | Looting juicy information for part 3 |
+| [ProcDump lsass](#Procdump) | Retrieving credentials by remotely ProcDumping lsass process |
+| [Bloodhound](#Bloodhound) | Cartographying the domaine by using Bloodhound |
+| [Browsing Shares](#Shares) | Retrieving juicy information by browsing shares |
+| [RBCD](#RBCD) | Getting DA by exploiting RBCD |
+| [Looting](#Looting) | Looting juicy information for part 3 |
 
 ## About
 The WonkaChall 2 was created by Akerva for leHACK19 (Paris).
@@ -52,7 +52,7 @@ We confirm these three machines are part of a domain FACTORY.LAN.
 | SRV01-INTRANET | 172.16.42.11 | Windows Server 2019 |
 | PC01-DEV | 172.16.42.101	| Windows 10 |
 
-## Tomcat's host manager
+## Tomcat
 By reaching SRV01-INTRANET's port 8080 with a web browser, we face what looks like an internal wiki of the Wonka organization.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/6-1.png"></p>
@@ -119,7 +119,7 @@ The flag 5 is on the adminServer's Desktop.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/21-1.png"></p>
 
-## ProcDump lsass
+## Procdump
 We then dump the lsass process thank's to Sysinternal's ProcDump tool.
 
 ![dump]()
@@ -162,7 +162,7 @@ For the second point, our Bloodhound clearly states that SvcJoinComputerToDom ha
 
 So, we have to find this SvcJoinComputerToDom. We can imagine this service account was created by the domain administrator in order to delegate the right to join machines to the domain to the adminServer and adminWorkstation, without giving them the domain administrator privilege.
 
-## Browsing Shares
+## Shares
 We check to what our adminServer account has access to.
 
 <p align="center"><img src="https://akerva.com/wp-content/uploads/2019/07/28-1.png"></p>
