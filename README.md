@@ -9,8 +9,8 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | -------------- |:-------------- |
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
-| [Foothold](#Foothold)    | Initial foothold by exploiting Tomcat's host-manager |
-| [Bloodhound](#Bloodhound)    | AD Cartography with Bloodhound |
+| [Foothold](#Foothold)    | Initial foothold |
+| [Bloodhound](#Bloodhound)    | AD Cartography |
 | [Shares](#Shares)    | Browsing shares |
 | [RBCD](#RBCD)    | RBCD Exploitation |
 | [Looting](#Looting)    | Looting juicy information|
