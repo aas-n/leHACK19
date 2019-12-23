@@ -9,10 +9,10 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | -------------- |:-------------|
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Information Gathering |
-| [Foothold](#Foothold)    | Getting RCE via Tomcat's host manager and ProcDumping lsass process |
-| [Bloodhound](#Bloodhound)    | Cartographying the domain with Bloodhound |
-| [BrowsingShares](#Shares)    | Retrieving juicy information by browsing shares |
-| [RBCD](#RBCD)    | Getting Domain Admin by exploiting RBCD |
+| [Foothold](#Foothold)    | Initial foothold and Post-Exploitation |
+| [Bloodhound](#Bloodhound)    | Cartographying with Bloodhound |
+| [Shares](#Shares)    | Browsing shares |
+| [RBCD](#RBCD)    | Getting DA by exploiting RBCD |
 | [Looting](#Looting)    | Looting juicy information for part 3 |
 
 ## About
