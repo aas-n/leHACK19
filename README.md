@@ -10,7 +10,7 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | [About](#About)    | About the challenge |
 | [Recon](#Recon)    | Doing some Recon |
 | [Foothold](#Foothold)    | Initial foothold |
-| [Bloodhound](#Bloodhound)    | Cartographying AD |
+| [Bloodhound](#Bloodhound)    | AD Cartography |
 | [Shares](#Shares)    | Browsing shares |
 | [RBCD](#RBCD)    | RBCD Exploitation |
 | [Looting](#Looting)    | Looting juicy information|
