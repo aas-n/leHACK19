@@ -9,11 +9,11 @@ Write-up for the Active Directory Lab I have created for [Akerva](https://www.ak
 | -------------- |:-------------- |
 | [About](#About)    | About the challenge |
 | [Reconnaissance](#Reconnaissance)    | Reconnaissance |
-| [Initial Foothold](#Foothold)    | Tomcat's host-manager exploitation |
-| [Procdump lsass](#Procdump)    | Procdump lsass process to retrieve credentials |
-| [Cartography with Bloodhound](#Bloodhound)    | AD Cartography with Bloodhound |
-| [Browsing Shares](#Shares)    | Browsing shares to retrieve credentials |
-| [RBCD Exploitation](#RBCD)    | RBCD Exploitation |
+| [Initial Foothold](#Initial-Foothold)    | Tomcat's host-manager exploitation |
+| [Procdump lsass](#Procdump-lsass)    | Procdump lsass process to retrieve credentials |
+| [Cartography with Bloodhound](#Cartography-with-Bloodhound)    | AD Cartography with Bloodhound |
+| [Browsing Shares](#Browsing-Shares)    | Browsing shares to retrieve credentials |
+| [RBCD Exploitation](#RBCD-Exploitation)    | RBCD Exploitation |
 | [Looting](#Looting)    | Looting juicy information|
 
 ## About
